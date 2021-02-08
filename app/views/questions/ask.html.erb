@@ -2,3 +2,15 @@
   <input type="text" name="question">
   <input type="submit" value="Ask!">
 </form>
+
+<div class="container">
+  <h1>Answers</h1>
+  <blockquote class="question">
+    <%= @question %>
+  </blockquote>
+  <blockquote class= "answer">
+    <%= @answer %>
+  </blockquote>
+</div>
+
+<%= link_to "Ask a new question", ask_path %>
